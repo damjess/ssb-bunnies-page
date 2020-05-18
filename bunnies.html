@@ -1,0 +1,39 @@
+<div class="filters">
+    <select id="bunny-sex-select" class="select-css">
+        <option value='nil'>Any Gender</option>
+        <option value='male'>Male</option>
+        <option value='female'>Female</option>
+        <option value='other'>Other</option>
+    </select>
+    <select id="bunny-size-select" class="select-css">
+        <option value='nil'>Any Size</option>
+        <option value='small'>Small</option>
+        <option value='medium'>Medium</option>
+        <option value='large'>Large</option>
+    </select>
+</div>
+<div id="bunny-container">
+</div>
+<div id="bunny-modal" class="modal-hidden modal">
+    <div class="img-container">
+        <img class="modal-img" src="">
+    </div>
+    <div class="title">
+        <h2 class="name-info"></h2>
+        <ul>
+            <li class="age-info"></li>
+            <li class="sex-info"></li>
+            <li class="weight-info"></li>
+        </ul>
+    </div>
+    <p class = "description">Description</p>
+    <div class="footer">
+        <a href="https://www.savesomebunny.org/pre-adoption-application/" 
+        class="card-button"
+        target="_blank">ADOPT</a>
+    </div>
+</div>
+<div class="modal-catcher modal-catcher-hidden"></div>
+<script>
+    BunnyUI.withElementId('bunny-container');
+</script>
