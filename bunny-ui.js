@@ -1,3 +1,7 @@
+/**
+* Save SomeBunny Bunny Page BunnyUI Class
+* Author: jess@menidae.com
+*/
 class BunnyUI {
 
     static _SEX_SELECTOR_ID() { return 'bunny-sex-select'; }

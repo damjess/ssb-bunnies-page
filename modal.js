@@ -1,3 +1,7 @@
+/**
+* Save SomeBunny Bunny Page Modal Class
+* Author: jess@menidae.com & hugh@blinkybeach.com
+*/
 class Modal {
 
     static get _CLASS() { return 'modal'; }

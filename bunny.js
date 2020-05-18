@@ -1,3 +1,7 @@
+/**
+* Save SomeBunny Bunny Page Bunny Class
+* Author: jess@menidae.com
+*/
 class Bunny {
     constructor(
         status,     // string

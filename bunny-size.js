@@ -1,3 +1,7 @@
+/**
+* Save SomeBunny Bunny Page BunnySize Class
+* Author: jess@menidae.com
+*/
 class BunnySize {
 
     constructor(

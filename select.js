@@ -1,3 +1,7 @@
+/**
+* Save SomeBunny Bunny Page BunnyDropdown Class
+* Author: jess@menidae.com
+*/
 class BunnyDropdown {
     constructor(
         domElement,      // DOM element (select)

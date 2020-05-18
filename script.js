@@ -1,3 +1,7 @@
+/**
+* Save SomeBunny Bunny Page recieveBunnies script
+* Author: jess@menidae.com
+*/
 function recieveBunnies(
     error,
     bunnies

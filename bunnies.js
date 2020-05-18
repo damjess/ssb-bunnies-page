@@ -1,3 +1,7 @@
+/**
+* Save SomeBunny Bunny Page Bunnies Class
+* Author: jess@menidae.com
+*/
 class Bunnies {
     constructor(
         bunnies    // Array<Bunny>
