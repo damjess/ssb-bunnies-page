@@ -43,7 +43,7 @@ class Bunnies {
     }
 
     filterBunnies(
-        sex=null,  // String: male, female
+        sex=null,  // String: male, female, other
         size=null  // String: small, medium, or large
     ) {
 
@@ -72,7 +72,7 @@ class Bunnies {
     }
 
     createDomElement(
-        sex=null,  // String: male, female
+        sex=null,  // String: male, female, other
         size=null  // String: small, medium, or large
     ) {
         const outerDiv = document.createElement('div');
