@@ -135,6 +135,12 @@
     margin-top: -3px;
     border-top: 3px solid;
     border-color: rgb(89, 89, 89);
+    display: flex;
+    justify-content: center;
+}
+.title > h2, ul {
+    flex-basis: 50%;
+    margin: auto;
 }
 .description {
     text-align: left;
