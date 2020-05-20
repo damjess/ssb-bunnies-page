@@ -160,6 +160,8 @@
     transition: all 0.16s ease-out;
     color: #838383;
     max-height: 95vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 .modal-long-content {
     max-height: 50vh;
@@ -182,8 +184,6 @@
         left: 2.5vw;
         width: 95vw;
         top: 2vh;
-        overflow-x: hidden;
-        overflow-y: scroll;
     }
 }
 @media screen and (min-width: 1024px) {
