@@ -152,13 +152,14 @@
     text-align: center;
     overflow: hidden;
     border-radius: 1%;
-    top: 10vh;
-    width: 430px;
-    left: calc(50vw - 215px);
+    top: 5vh;
+    width: 35vw;
+    left: calc(50vw - 15vw);
     margin: 0 auto;
     z-index: 12;
     transition: all 0.16s ease-out;
     color: #838383;
+    max-height: 95vh;
 }
 .modal-long-content {
     max-height: 50vh;
@@ -180,8 +181,16 @@
     .modal {
         left: 2.5vw;
         width: 95vw;
-        top: 5vh;
+        top: 2vh;
+        overflow-x: hidden;
+        overflow-y: scroll;
     }
+}
+@media screen and (min-width: 1024px) {
+     .modal {
+        width: 430px;
+        left: calc(50vw - 215px);
+     }
 }
 .modal-catcher {
     position: fixed;
