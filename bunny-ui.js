@@ -8,15 +8,18 @@ class BunnyUI {
     static _SIZE_SELECTOR_ID() { return 'bunny-size-select'; }
 
     constructor(
-        containerElement // DOMElement
+        containerElement, // DOMElement
+        status           // String: adoptable or pending
     ) {
 
         if (!containerElement) { throw Error('Falsey container'); }
+        if (!status) { throw Error('No status provided'); }
 
         const Self = BunnyUI;
         const self = this;
 
         this._containerElement = containerElement;
+        this._status = status;
         this._bunnies = null;  // Optional[Bunnies]
 
         this._sexSelector = new BunnyDropdown(
@@ -48,9 +51,10 @@ class BunnyUI {
 
     _updateBunnyDisplay() {
 
-        const bunniesElement = this._bunnies.createDomElement(
+        const bunniesElement = this._bunnies.createBunniesDomElement(
             this._sexSelector.value,
-            this._sizeSelector.value
+            this._sizeSelector.value,
+            this._status
         );
 
         while (this._containerElement.firstChild) {
@@ -66,8 +70,8 @@ class BunnyUI {
 
     }
 
-    static fromElementId(elementId) {
-        return new BunnyUI(document.getElementById(elementId));
+    static fromElementId(elementId, status) {
+        return new BunnyUI(document.getElementById(elementId), status);
     }
 
 }

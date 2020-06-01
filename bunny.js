@@ -30,6 +30,7 @@ class Bunny {
     }
 
     get isAdoptable() {return (this._status == "ADOPTABLE");}
+    get isPending() {return (this._status == "PENDING");}
     get hasImage() {
         return (this._images != undefined && this._images.length > 0);
     }
@@ -40,7 +41,7 @@ class Bunny {
 
     get isFemale() { return this._sex === 'FEMALE'; }
     get isMale() { return this._sex === 'MALE'; }
-    get isOther() { return this._sex === 'OTHER'; }
+    get isOther() { return (this._sex === 'OTHER' || this._sex == null); }
     get size() { return BunnySize.withMass(this._weight); }
     get sizeName() {
         if (!this.size) { return 'Unknown Size'; }
@@ -94,7 +95,7 @@ class Bunny {
         return (years + yString + months + mString);
     }
 
-    createDomElement(modal) {
+    createBunnyDomElement(modal) {
 
         const outerDiv = document.createElement('div');
         outerDiv.classList.add('bunny');

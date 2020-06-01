@@ -71,9 +71,10 @@ class Bunnies {
 
     }
 
-    createDomElement(
+    createBunniesDomElement(
         sex=null,  // String: male, female, other
-        size=null  // String: small, medium, or large
+        size=null,  // String: small, medium, or large
+        status      // String: adoptable or pending
     ) {
         const outerDiv = document.createElement('div');
         outerDiv.classList.add('bunnies');
@@ -85,8 +86,14 @@ class Bunnies {
         );
 
         bunnies.map((b) => {
-            if (b.isAdoptable) {
-                outerDiv.appendChild(b.createDomElement(modal));
+            if (status == "adoptable") {
+                if (b.isAdoptable) {
+                    outerDiv.appendChild(b.createBunnyDomElement(modal));
+                }
+            } else if (status == "pending") {
+                if (b.isPending) {
+                    outerDiv.appendChild(b.createBunnyDomElement(modal));
+                }
             }
         })
         return outerDiv;

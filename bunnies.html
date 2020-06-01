@@ -21,7 +21,10 @@
         <option value='large'>Large</option>
     </select>
 </div>
-<div id="bunny-container">
+<div id="adoptable-bunny-container">
+</div>
+<h2>Pending Bunnies</h2>
+<div id="pending-bunny-container">
 </div>
 <div id="bunny-modal" class="modal-hidden modal">
     <div class="img-container">
@@ -52,5 +55,6 @@
 * bunny-size.js
 * modal.js
 */
-    BunnyUI.withElementId('bunny-container');
+    BunnyUI.fromElementId('adoptable-bunny-container', 'adoptable');
+    BunnyUI.fromElementId('pending-bunny-container', 'pending');
 </script>
