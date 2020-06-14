@@ -93,6 +93,24 @@
 .left-panel h3 {
     margin-bottom: 10px;
 }
+#pending-title {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+#pending-title > h2 {
+   margin-bottom: 20px;
+}
+#pending-bunny-container .left-panel {
+    background-color: #7c67cf;
+}
+#pending-bunny-container .left-panel > a, .card-button {
+    color: #3e1263;
+    box-shadow: 0 5px #3e1263;
+}
+#pending-bunny-container .left-panel > .card-button:hover {
+   background-color: #643fa1;
+}
 .card-button {
     color: #67cfcd;
     background-color: #fff;
