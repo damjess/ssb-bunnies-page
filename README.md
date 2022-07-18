@@ -13,3 +13,5 @@ This script can be implimented on any SSB WordPress page using a code block. Scr
 6. bunny.js
 7. bunny-size.js
 8. modal.js
+
+NOTE: If you have an error about an uninitialized variable for BunnyUI.fromElementId, try initializing after the scripts. 
