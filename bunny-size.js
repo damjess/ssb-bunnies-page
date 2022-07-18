@@ -16,7 +16,7 @@ class BunnySize {
         this._friendlyName = friendlyName;
         this._key = key;
 
-        return
+        return;
 
     }
 
